@@ -44,7 +44,7 @@ function updateTime() {
 }
 
 function lap() {
-    if (isRunning) {
+    if (isRunning || startPauseBtn.textContent === 'Resume') {
         lapCount++;
         const li = document.createElement('li');
         li.innerHTML = `
